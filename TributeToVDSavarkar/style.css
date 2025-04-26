@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  img {
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Custom color palette */
+  .bg-brown-800 {
+    background-color: #4A2C2A;
+  }
+  
+  .text-brown-700 {
+    color: #6B4E31;
+  }
+  
+  .border-brown-600 {
+    border-color: #8B5A2B;
+  }
