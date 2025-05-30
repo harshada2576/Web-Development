@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {}
+
+        .container 
+        {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            font-family: cursive;
+            background-color: bisque;
+        }
+
+        .item 
+        {
+            border: 2px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(216, 200, 200);
+
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            clear: both;
+            /* float: left; */
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Welcome to my store
+        </h1>
+        <div id="fruits" class="item">
+            <h3>
+                Fruits
+            </h3>
+            <p id="fruitspara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam. Ex rerum
+                aliquam perferendis natus dolorem repudiandae, similique magni beatae dolor, voluptatum quasi earum
+                itaque harum laboriosam, vero dolores officiis!
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>
+                Computer
+            </h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam. Ex rerum
+                aliquam perferendis natus dolorem repudiandae, similique magni beatae dolor, voluptatum quasi earum
+                itaque harum laboriosam, vero dolores Lorem ipsum dolor sit amet consectetur adipisicing.
+                .</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>
+                Stationary
+            </h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam. Ex
+                rerum aliquam perferendis natus dolorem repudiandae, similique magni beatae dolor, laboriosam, vero
+                dolores officiis! Distinctio ipsam tempore sint.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
