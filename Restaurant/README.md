@@ -19,8 +19,6 @@ This is a **responsive and visually appealing Restaurant Website** built using *
 <h2>
 📌 Future Enhancements (Optional Ideas)
 </h2>
-<br>
-
 Add smooth scrolling or animations using JavaScript or CSS transitions.<br>
 Make the contact form functional using PHP or Formspree.<br>
 Add carousel or modal for the image gallery.<br>
