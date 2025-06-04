@@ -1,25 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haan's Restaurnt</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="container">
         <div class="navbar">
             <div class="navbar" id="item">
-               <li class="navbar">Home</li>
-               <li class="navbar">About Us</li>
-               <li class="navbar">Contact Us</li>
-               <li class="navbar">Locations</li>
-            </div>  
-        </div>
-        <div class="section">
-            
-        </div>
-    </div>
+                <li class="navbar">Home</li>
+                <li class="navbar">Menu</li>
+                <li class="navbar">Locations</li>
+                <li class="navbar">Contact Us</li>
 
+            </div>
+        </div>
+        <div class="home">
+            <h1>
+                Home
+            </h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint vel ab ducimus similique illo expedita
+                impedit quas fugiat itaque ea! Reprehenderit earum nemo ex odio unde, provident blanditiis aspernatur
+                esse asperiores nihil maiores. Deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa debitis exercitationem minima aperiam
+                consequuntur ea dolor animi pariatur ut eveniet, itaque id quibusdam vel ratione porro nulla dicta
+                tenetur obcaecati modi officia corrupti amet inventore sit! Dicta sed dolores ea animi natus in fuga.
+                Consequuntur aut optio dolorum incidunt nemo a obcaecati doloribus adipisci officiis accusantium ipsum
+                aspernatur, molestias eligendi et aperiam quia commodi laudantium veritatis, similique repellat numquam?
+                Non explicabo aperiam at voluptate libero, alias earum in consequatur distinctio ratione porro odit
+                laboriosam molestias amet sequi molestiae laudantium laborum labore veniam quisquam aut assumenda nisi.
+                Facere quibusdam illum maiores voluptatem, magni quas debitis placeat! Eaque in veritatis tenetur,
+                voluptatibus, placeat reiciendis consequuntur ipsum cumque, libero omnis voluptas earum ratione
+                voluptatem! Iste sint vel incidunt eligendi sunt nulla unde quisquam earum id dolorem eum, consequuntur
+                ad molestias nam rerum qui amet itaque? Vero, dicta. Maxime, id totam nisi sunt repellat quibusdam sequi
+                recusandae quod optio ullam veritatis quisquam praesentium ratione. Totam voluptatum quod quam
+                praesentium voluptate impedit odit amet vitae mollitia velit animi nemo reiciendis, nisi atque assumenda
+                nam exercitationem quo dolore itaque officiis magnam doloribus? In maxime culpa quod doloribus
+                perspiciatis neque ducimus, quaerat beatae ut, quas debitis suscipit?
+            </p>
+        </div>
+        <div class="menu">
+            <h1>
+                Menu
+            </h1>
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Rate</th>
+                </tr>
+                <tr>
+                    <td>Margherita Pizza</td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td>Spaghetti Carbonara</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>Caesar Salad</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Grilled Chicken</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Lava Cake</td>
+                    <td>$8</td>
+                </tr>
+                <tr>
+                    <td>French Fries</td>
+                    <td>$5</td>
+                </tr>
+                <tr>
+                    <td>Cheeseburger</td>
+                    <td>$14</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Stir-Fry</td>
+                    <td>$11</td>
+                </tr>
+                <tr>
+                    <td>Tomato Soup</td>
+                    <td>$7</td>
+                </tr>
+                <tr>
+                    <td>Garlic Bread</td>
+                    <td>$6</td>
+                </tr>
+                <tr>
+                    <td>Chicken Wings</td>
+                    <td>$13</td>
+                </tr>
+                <tr>
+                    <td>Fish Tacos</td>
+                    <td>$16</td>
+                </tr>
+                <tr>
+                    <td>Ice Cream Sundae</td>
+                    <td>$9</td>
+                </tr>
+                <tr>
+                    <td>Fruit Smoothie</td>
+                    <td>$7</td>
+                </tr>
+                <tr>
+                    <td>Espresso</td>
+                    <td>$4</td>
+                </tr>
+            </table>
+        </div>
+        <div class="locations">
+            <h2>Visit Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Kalyan, MH, India</p>
+
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
 </body>
+
 </html>
