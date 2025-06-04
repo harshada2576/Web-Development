@@ -1,1 +1,53 @@
 
+*
+{
+    /* background-color: aqua; */
+}
+body
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container
+{
+    height: 80%;
+    width:100% ;
+}
+#item
+{
+    border: 2px solid red;
+    display: flex;
+    padding: 20px;
+    background-color: rgb(195, 152, 234);
+    align-items: center;
+    justify-content: center;
+}
+#item li
+{
+    /* border: 2px solid black; */
+    list-style: none;
+     padding: 15px;
+     /* flex-direction: row; */
+     background-color:blueviolet;
+     margin: 5px 10px;
+     border-radius: 5px;
+     font-size:large;
+
+}
+#item li:hover
+{
+    cursor: pointer;
+    background-color: white;
+}
+#image_bg
+{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+     border: 2px solid rgb(33, 151, 133);
+     /* background-color: black; */
+
+
+}
+
