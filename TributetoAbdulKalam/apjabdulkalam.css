@@ -1,0 +1,91 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}.container
+{
+    background-color: rgb(209, 209, 251);
+    min-height: 100vh;
+    border: 10px solid black;
+}
+.top-section
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.text-container{
+    
+    text-align: right;
+}
+.text-container h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #1d1e4c;
+    text-transform: uppercase;
+    margin-bottom: 5px; /* Adds spacing between name and date */
+}
+.text-container h4 {
+    font-size: 30px;
+    text-align: right;
+}
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+.top-section h1
+{
+    font-size: 45px;
+    font-weight: bold;
+    color: #1d1e4c;
+    text-transform: uppercase;
+}
+.top-section h4{
+    font-size: 30px;
+    text-align: end;
+}
+
+.imag-container{
+    border-radius: 50%;
+    overflow: hidden;
+    /* The overflow: hidden; property in CSS is used to hide any content that overflows its container. */
+}
+.imag-container,img
+{
+    width: 300px;
+    height: 320px;
+
+}
+.about-section
+{
+    margin-top: 50px;
+
+}
+.about-section h2{
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.about-section p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+.biography
+{
+  margin-top: 50px;  
+}
+.biography h3{
+    margin-bottom: 20px;
+}
+.biography ul
+{
+    margin-left: 50px;
+}
+.biography li
+{
+    margin-bottom: 5px;
+}
