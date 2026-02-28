@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import "./App.css";
+import FilterBar from "./components/FilterBar";
 import NavBar from "./components/NavBar";
 import TodoCard from "./components/TodoCard";
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <TodoCard></TodoCard>
+      <FilterBar></FilterBar>
 
     </>
   );
