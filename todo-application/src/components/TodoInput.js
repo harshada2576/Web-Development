@@ -8,11 +8,23 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 
 
 
-const TodoInput = () => {
+const TodoInput = ({ addTodo }) => {
     const [show, setShow] = useState(false);
+    const [title, setTitle] = useState('');
+    const [body, setBody] = useState('');
+    const [category, setCategory] = useState('General');
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const handleAdd = () => {
+        if (title.trim() === '') return; // Validation
+        addTodo(Date.now(), title, category, body);
+        // Clear form
+        setTitle('');
+        setBody('');
+        setCategory('General');
+        handleClose();
+    };
     return (
 
         <>
@@ -20,7 +32,7 @@ const TodoInput = () => {
                 Launch demo modal
             </Button>
 
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleAdd}>
                 <Modal.Header closeButton>
                     <Modal.Title>Add New Todo</Modal.Title>
                 </Modal.Header>
@@ -31,11 +43,13 @@ const TodoInput = () => {
                             <Form.Control
                                 type="text"
                                 placeholder="Add Todo"
+                                value={title}
+                                onChange={(e) => setTitle(e.target.value)}
                                 autoFocus
                             />
                         </Form.Group>
                         <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows={3} />
+                        <Form.Control as="textarea" rows={3} value={body} onChange={(e) => setBody(e.target.value)} />
                         <DropdownButton id="dropdown-basic" title="Select Category" variant="Secondary">
                             <Dropdown.Item as="button">Personal & Lifestyle</Dropdown.Item>
                             <Dropdown.Item as="button">Work & Career </Dropdown.Item>
