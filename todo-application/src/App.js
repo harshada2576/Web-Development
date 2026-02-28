@@ -38,10 +38,10 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
+      <FilterBar filter={filter} setFilter={setFilter}></FilterBar>
 
       <TodoInput addTodo={addTodo} />
       <TodoList todos={todos} deleteTodo={deleteTodo} editTodo={editTodo} toggleComplete={toggleComplete} />
-      <FilterBar filter={filter} setFilter={setFilter}></FilterBar>
 
     </>
   );

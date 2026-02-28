@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div><Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#" style={{ fontWeight: 'bold' }}>Todo Application </Navbar.Brand>
+        <Navbar.Brand href="/" style={{ fontWeight: 'bold' }}>Todo Application </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -16,8 +16,9 @@ const NavBar = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <div style={{ fontSize: '1.25rem', display: 'flex', flexDirection: 'row' }}><Nav.Link href="#action1" >Home</Nav.Link>
-              <Nav.Link href="#action2">About</Nav.Link></div>
+            <div style={{ fontSize: '1.25rem', display: 'flex', flexDirection: 'row' }}>
+              <Nav.Link href="/home" >Home</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link></div>
 
           </Nav>
           <Form className="d-flex">

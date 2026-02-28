@@ -28,11 +28,14 @@ const TodoInput = ({ addTodo }) => {
     return (
 
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Launch demo modal
-            </Button>
 
-            <Modal show={show} onHide={handleAdd}>
+
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Button variant="primary" onClick={handleShow}>
+                    Add Todo
+                </Button>
+            </div>
+            <Modal style={{ display: 'flex', justifyContent: 'center' }} show={show} onHide={handleAdd}>
                 <Modal.Header closeButton>
                     <Modal.Title>Add New Todo</Modal.Title>
                 </Modal.Header>
@@ -48,14 +51,16 @@ const TodoInput = ({ addTodo }) => {
                                 autoFocus
                             />
                         </Form.Group>
-                        <Form.Label>Example textarea</Form.Label>
+                        <Form.Label>Description</Form.Label>
                         <Form.Control as="textarea" rows={3} value={body} onChange={(e) => setBody(e.target.value)} />
-                        <DropdownButton id="dropdown-basic" title="Select Category" variant="Secondary">
-                            <Dropdown.Item as="button">Personal & Lifestyle</Dropdown.Item>
-                            <Dropdown.Item as="button">Work & Career </Dropdown.Item>
-                            <Dropdown.Item as="button">Social & Community </Dropdown.Item>
-                            <Dropdown.Item as="button">Other </Dropdown.Item>
-                        </DropdownButton>
+                        <div style={{ marginTop: '1rem' }}>
+                            <DropdownButton id="dropdown-basic" title="Select Category" variant="Secondary" style={{ MarginLeft: '3rem' }}>
+                                <Dropdown.Item as="button">Personal & Lifestyle</Dropdown.Item>
+                                <Dropdown.Item as="button">Work & Career </Dropdown.Item>
+                                <Dropdown.Item as="button">Social & Community </Dropdown.Item>
+                                <Dropdown.Item as="button">Other </Dropdown.Item>
+                            </DropdownButton>
+                        </div>
                     </Form>
 
                 </Modal.Body >
